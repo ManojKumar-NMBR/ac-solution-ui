@@ -88,4 +88,22 @@ export class AppComponent implements OnInit, AfterViewInit {
     { name: 'K. ARUNA DEVI', designation: 'Director', image: 'registrationAndStamps.png', about: 'Being one of the most important Directors of Shathabdhi Townships, She hasn’t been sparing no stone un-turned in making every project a successful venture. Thanks to her foresightedness, all her efforts to make ventures of Shathabdhi Townships a trust-worthy, reliable and investor-friendly have been yielding good results.' }
   ];
 
+  weAreList = [
+    { service: "AirCool Solutions is a indipendent AC repair service provide." },
+    { service: "We are expert technician , believe in client satisfaction." },
+    { service: "We are experienced more then 7 years in this field." },
+    { service: "Provide Service to our valuable customer in Delhi/NCR." },
+    { service: "On day service promiss." },
+    { service: "Providing warranty for 90 days." },
+    { service: "We don't charge if fail to repair." },
+    { service: "We always use original parts in case of replacement." }
+  ]
+
+  acServicesData = [
+    { name: 'Air Conditioning', image: 'air-conditioning.png' },
+    { name: 'Gas Filling', image: 'gas-filling.png' },
+    { name: 'Replacement & Installation', image: 'replacement-installation.png' },
+    { name: 'Service & Repairs', image: 'services-repairs.png' }
+  ];
+
 }

@@ -156,3 +156,86 @@ nav {
         }
     }
 }
+
+.aboutUsBlock {
+    .whoweareList {
+        :hover {
+            color: #e26f00;
+            cursor: pointer;
+        }
+    }
+    .whowearePara {
+        :hover {
+            color: #e26f00;
+        }
+        line-height: 2rem;
+    }
+    .contract_discount {
+        margin-top: 30 px;
+        height: 100%;
+        background: #eff0f0;
+        text-align: center;
+        width: 65%;
+        .text {
+            height: 100%;
+            display: grid;
+        }
+    }
+}
+
+.acServicesBlock {
+    h2 {
+        color: #051d3e;
+        font-size: 34px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+    }
+    .content {
+        font-size: 18px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: normal;
+        color: #797979;
+        line-height: 1.8rem;
+    }
+    .cardList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cardListItem {
+        // flex-grow: 1;
+        img {
+            max-width: 90%;
+        }
+        .serviceName {
+            background: url(../assets/images/services/service-title.png) no-repeat scroll center center;
+            height: 3.4rem;
+            width: 100%;
+            transform: translateY(-135%);
+            top: -25 px;
+            text-align: center;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            span {
+                color: white;
+                font-size: 12px;
+                word-break: break-word;
+            }
+        }
+        h4 {
+            position: absolute;
+            // left: 0px;
+            width: 100%;
+            // bottom: 18px;
+            text-align: center;
+            font-size: xx-large;
+            color: #fff;
+            text-transform: uppercase;
+            z-index: 3;
+            font-weight: 700;
+            text-shadow: none;
+        }
+    }
+}

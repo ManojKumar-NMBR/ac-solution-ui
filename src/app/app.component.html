@@ -85,10 +85,65 @@
   </div> -->
 
 
-  <div class="row servicesBlock" id="servicesBlock">
-    <h2 class="text-center">Services</h2>
+  <div class="aboutUsBlock m-5" id="aboutUsBlock">
+    <h2 class="text-center">About AirCool Solutions</h2>
     <div class="headerUnderline mx-auto"></div>
-    <div class="cardList mt-4">
+    <div class="whowearePara mt-4 m-4">
+      <p>
+        As the temperatures increments and the climate gets harsher, you'd need to ensure you have a working AC
+        framework in your home which is vitality productive. Regardless of whether you are introducing spic and span AC
+        or experiencing routine upkeep, it's critical to employ the opportune individual for the activity.
+        We are a multifaceted supplier that exceeds expectations as a solitary source answer for all your Ac prompt
+        needs and administrations. Be it, AC Gas filling in Delhi, AC gas topping off in Noida, AC gas recording best
+        costs, simply ring us. We are multipurpose specialist organizations of AC frameworks inside the territories
+        referenced previously.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="mx-4">
+          <h4>We Are...</h4>
+          <div class="whoweareList mt-2 pl-2 mx-2">
+            <ul *ngFor="let list of weAreList">
+              -{{list.service}}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 justify-content-center d-flex">
+        <div class="contract_discount">
+          <div class="text my-3">
+            <h4><span>299 Rs</span> for AC Service</h4>
+            <h5>We provide specialists in the<br> following areas</h5>
+            <p>Residential and Commercial.</p>
+            <a href="tel:9870227516">Just Call US</a>
+            <h6>Time- 8am to 10pm</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row acServicesBlock" id="acServicesBlock">
+    <h2 class="text-center">Air Conditioning Repair, Gas Filling & Installation <br /> Services in Your Locality</h2>
+    <p class="text-center text-secondary content px-5 py-4">
+      We highly esteem as one of the most rumored air conditioning fix specialist organizations in the Delhi. We are a
+      one-stop answer for all AC administration related issues. Our definitive objective is to give great AC fix, AC
+      establishment administration under the strict spending plan of the customers that are spread over the national
+      capital district.
+    </p>
+    <div class="cardList px-5">
+      <div class="cardListItem rounded" *ngFor="let acService of acServicesData">
+        <div class="d-block text-center">
+          <img src="../assets/images/services/{{acService.image}}">
+          <div class="serviceName">
+            <span class="text-center my-auto">{{acService.name}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="cardList mt-4">
       <div class="cardListItem" *ngFor="let service of serviceData">
         <div class="card border-0 pt-2">
           <div class="d-flex justify-content-center">
@@ -103,27 +158,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
-  <div class="aboutUsBlock pt-5" id="aboutUsBlock">
-    <h2 class="text-center">Who We Are!</h2>
-    <div class="headerUnderline mx-auto"></div>
-    <section class="mx-5">
-      <ng-container [ngTemplateOutlet]="aboutUsTempLeftToRight"
-        [ngTemplateOutletContext]="{aboutUsData : aboutUsData[0]}">
-      </ng-container>
-      <ng-container [ngTemplateOutlet]="aboutUsTempRightToLeft"
-        [ngTemplateOutletContext]="{aboutUsData : aboutUsData[1]}">
-      </ng-container>
-      <ng-container [ngTemplateOutlet]="aboutUsTempLeftToRight"
-        [ngTemplateOutletContext]="{aboutUsData : aboutUsData[2]}">
-      </ng-container>
-      <ng-container [ngTemplateOutlet]="aboutUsTempRightToLeft"
-        [ngTemplateOutletContext]="{aboutUsData : aboutUsData[3]}">
-      </ng-container>
-    </section>
-  </div>
+
+
 
   <div class="row contactUs mb-5" id="contactUs">
     <h2 class="text-center">Contact Us</h2>
@@ -149,33 +188,3 @@
     <span class="d-block text-center">Copyright 2021 | All Rights Reserved by Tanvika Real Estate</span>
   </div>
 </div>
-
-<ng-template #aboutUsTempLeftToRight let-aboutUsData="aboutUsData">
-  <div class="aboutUsList m-5">
-    <div class="aboutImageItem">
-      <img src="../assets/images/services/{{aboutUsData.image}}" class="rounded">
-    </div>
-    <div class="aboutDetailItem mx-4">
-      <div class="nameDesignation">
-        <span class="h5 fw-bold">{{aboutUsData.name}}</span>
-        <span class="ms-2 designation">({{aboutUsData.designation}})</span>
-      </div>
-      <p class="mt-3">{{ aboutUsData.about }}</p>
-    </div>
-  </div>
-</ng-template>
-
-<ng-template #aboutUsTempRightToLeft let-aboutUsData="aboutUsData">
-  <div class="aboutUsList m-5">
-    <div class="aboutDetailItem mx-4">
-      <div class="nameDesignation" style="text-align: end;">
-        <span class="h5 fw-bold">{{aboutUsData.name}}</span>
-        <span class="ms-2 designation">({{aboutUsData.designation}})</span>
-      </div>
-      <p class="mt-3">{{ aboutUsData.about }}</p>
-    </div>
-    <div class="aboutImageItem">
-      <img src="../assets/images/services/{{aboutUsData.image}}" class="rounded">
-    </div>
-  </div>
-</ng-template>
