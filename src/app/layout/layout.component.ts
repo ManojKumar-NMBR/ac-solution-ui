@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Event, NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'tre-layout',
@@ -38,7 +38,31 @@ export class LayoutComponent implements OnInit {
 
   constructor(private router: Router) { }
 
+  pagePathTitle = '';
   ngOnInit(): void {
+    this.setPagePathTitleValue();
+
+    this.router.events.subscribe((val: Event) => {
+      // highlight side menu
+      if (val instanceof NavigationEnd)
+        this.setPagePathTitleValue();
+    });
+  }
+
+  setPagePathTitleValue() {
+    if (this.router.url.includes('contactUs')) {
+      this.pagePathTitle = 'Contact US';
+    }
+    else if (this.router.url.includes('gallery')) {
+      this.pagePathTitle = 'Gallery';
+    }
+
+
+
+  }
+
+  gotoHome() {
+    this.router.navigate(['home']);
   }
 
 }

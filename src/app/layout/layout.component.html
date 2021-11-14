@@ -25,10 +25,10 @@
 
 <div class="layoutBlock mt-5 pt-2 d-flex text-white">
     <div class="my-auto ms-5">
-        <h2 class="blockTitle mb-0">GALLERY</h2>
+        <h2 class="blockTitle mb-0 text-uppercase">{{pagePathTitle}}</h2>
         <div class="pathLink mx-1">
-            <span class="homeLink">Home</span>
-            <span class="mx-2 restLinks">&gt; Gallery</span>
+            <span class="homeLink" (click)="gotoHome()">Home</span>
+            <span class="mx-2 restLinks">&gt; {{pagePathTitle}}</span>
         </div>
     </div>
 </div>
