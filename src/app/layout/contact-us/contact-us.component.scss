@@ -1,0 +1,52 @@
+.addressBlock {
+    i {
+        font-size: 3rem;
+        color: lightblue;
+    }
+    i.fa-envelope-o {
+        font-size: 2.5rem;
+    }
+}
+
+.dropMessageBlock {
+    input {
+        height: 55px;
+        padding: 0px 20px;
+        border-radius: 0px;
+        border: 1px solid #e1e1e1;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: "Poppins", sans-serif;
+        color: #797979;
+    }
+    textarea {
+        height: 25vmin;
+        padding: 15px 20px;
+        border-radius: 0px;
+        border: 1px solid #e1e1e1;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: "Poppins", sans-serif;
+        color: #797979;
+        resize: none;
+    }
+
+    .submitNowBtn {
+        padding: 0px 28px;
+        line-height: 44px;
+        background: #ca232a;
+        text-transform: uppercase;
+        color: white;
+        &:hover {
+            border-color: #ca232a;
+            background: transparent;
+            color: #ca232a;
+        }
+    }
+}
