@@ -16,7 +16,12 @@ export class GalleryComponent implements OnInit {
     { type: 'Heating', src: 'https://aircoolsolutions.in/img/gallery/gallery-5.jpg' },
     { type: 'Maintainence', src: 'https://aircoolsolutions.in/img/gallery/gallery-9.jpg' },
     { type: 'Geothermal', src: 'https://aircoolsolutions.in/img/gallery/gallery-1.jpg' },
-    { type: 'Heating', src: 'https://aircoolsolutions.in/img/gallery/gallery-6.jpg' }
+    { type: 'Heating', src: 'https://aircoolsolutions.in/img/gallery/gallery-6.jpg' },
+    { type: 'Indoor Air Quality', src: 'https://aircoolsolutions.in/img/gallery/gallery-4.jpg' },
+    { type: 'Maintainence', src: 'https://aircoolsolutions.in/img/gallery/gallery-8.jpg' },
+    { type: 'Maintainence', src: 'https://aircoolsolutions.in/img/gallery/gallery-3.jpg' },
+    { type: 'Air Conditioning', src: 'https://aircoolsolutions.in/img/gallery/gallery-5.jpg' },
+    { type: 'Air Conditioning', src: 'https://aircoolsolutions.in/img/gallery/gallery-9.jpg' },
   ]
 
   constructor() { }

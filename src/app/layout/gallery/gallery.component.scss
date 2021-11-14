@@ -3,7 +3,8 @@ a.nav-link.active {
 }
 .galleryList {
     .filterGallery {
-        // height: 35vmin;
+        cursor: pointer;
+        height: 35vmin;
         background-repeat: no-repeat;
         background-size: contain;
         overflow: hidden !important;
@@ -11,7 +12,6 @@ a.nav-link.active {
         display: inline-block;
         // width: 100%;
         // height: max-content;
-        height: 10rem;
         // transform: scale(1);
         /* background: aliceblue;
         width: auto; */
@@ -19,6 +19,7 @@ a.nav-link.active {
         &:hover {
             transform: scale(1.05);
             transition: all 300ms ease-out;
+            overflow: hidden;
         }
         img {
             max-width: 100%;
