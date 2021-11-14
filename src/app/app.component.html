@@ -1,4 +1,4 @@
-<section id="homeBlock" role="banner">
+<!-- <section id="homeBlock" role="banner">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" [ngClass]="getNavBarClass()">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -10,11 +10,10 @@
         <span class="fw-500 fs-5">AC Solutions</span>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
           <li class="nav-item" placement="bottom-right" display="dynamic" ngbDropdown
-            *ngFor="let pageMenu of pageMenus;let i=index;" (click)="goToBlock(pageMenu.block)">
+            *ngFor="let pageMenu of pageMenus;let i=index;" (click)="goToBlock(pageMenu, $event)">
             <a class="nav-link active text-white pointerCursor px-3" [ngClass]="{'dropdown-toggle':pageMenu.children}"
               [href]="pageMenu.block" role="button" ngbDropdownToggle data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">{{
-              pageMenu.name }}</a>
+              aria-expanded="false">{{ pageMenu.name }}</a>
             <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink"
               *ngIf="pageMenu.children">
               <a class="dropdown-item" href="#" *ngFor="let child of pageMenu.children">{{child.name}}</a>
@@ -24,26 +23,6 @@
       </div>
     </div>
   </nav>
-
-  <!-- <div class="navbar-collapse text-center" id="navbarResponsive">
-    <ul class="navbar-nav ml-auto">
-  
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        main menu
-      </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">A</a>
-          <a class="dropdown-item" href="#">B</a>
-          <a class="dropdown-item" href="#">C</a>
-          <a class="dropdown-item" href="#">D</a>
-        </div>
-      </li>
-  
-      <button type="submit" onclick="location.href='/M';" class="btn btn-default">R</button>
-  
-    </ul>
-  </div> -->
 
   <carousel [isAnimated]="true" [interval]="3000" [noPause]="false" [showIndicators]="true">
     <slide *ngFor="let carouselSlide of carouselSlideData" class="d-block">
@@ -60,44 +39,11 @@
 </section>
 
 <div class="container-fluid">
-  <!-- <div class="row" id="homeBlock">
-    <carousel [isAnimated]="true" [interval]="3000" [noPause]="false" [showIndicators]="true">
-      <slide *ngFor="let carouselSlide of carouselSlideData" class="d-block">
-        <div class="d-flex align-items-center justify-content-center text-white carouselSlide"
-          [ngClass]="getCarouselClass(carouselSlide.id)">
-          <div class="lead text-center">
-            <h2>{{ carouselSlide.firstText }} custom content</h2>
-            <h3>{{ carouselSlide.firstText }} slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </div>
-      </slide>
-    </carousel>
-  </div> -->
-
-  <!-- <div class="row" id="welcomeBlock">
-    <div class="welcomeBlock">
-      <h2>Welcome to Tanvika</h2>
-      <p>
-        Whether you’re buying, selling or renting, we can help you move forward.
-      </p>
-    </div>
-  </div> -->
-
-
   <div class="aboutUsBlock m-5" id="aboutUsBlock">
     <h2 class="text-center blockTitle">About AirCool Solutions</h2>
     <div class="headerUnderline mx-auto"></div>
     <div class="whowearePara m-4">
-      <p>
-        As the temperatures increments and the climate gets harsher, you'd need to ensure you have a working AC
-        framework in your home which is vitality productive. Regardless of whether you are introducing spic and span AC
-        or experiencing routine upkeep, it's critical to employ the opportune individual for the activity.
-        We are a multifaceted supplier that exceeds expectations as a solitary source answer for all your Ac prompt
-        needs and administrations. Be it, AC Gas filling in Delhi, AC gas topping off in Noida, AC gas recording best
-        costs, simply ring us. We are multipurpose specialist organizations of AC frameworks inside the territories
-        referenced previously.
-      </p>
+      <p class="text-justify"> {{aboutAirCoolSolution}} </p>
     </div>
     <div class="row">
       <div class="col-6">
@@ -116,14 +62,36 @@
             <h4><span>299 Rs</span> for AC Service</h4>
             <h5>We provide specialists in the<br> following areas</h5>
             <p>Residential and Commercial.</p>
-            <a href="tel:9870227516">Just Call US</a>
-            <h6>Time- 8am to 10pm</h6>
+            <button type="button" class="btn btn-sm btn-primary w-50 mx-auto">Just Call US</button>
+            <p class="text-secondary mt-2">Time- 8am to 10pm</p>
+            <h6></h6>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="clientsBlock my-4">
+    <h2 class="text-center blockTitle">What Our Client Says</h2>
+    <div class="headerUnderline mx-auto"></div>
+
+    <div class="w-100 my-4">
+      <carousel [isAnimated]="true" [showIndicators]="false" [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="false"
+        [startFromIndex]="0" [interval]="2000">
+        <slide *ngFor="let client of clientData; let index=index">
+          <div class="card border-0">
+            <div class="card-body">
+              <div class="card-content p-4">
+                <h4 class="clientTitle">{{client.title}}</h4>
+                <p class="client-content">{{client.content}}</p>
+                <span class="clientName">{{client.client}}</span>
+              </div>
+            </div>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
 
   <div class="row acServicesBlock" id="acServicesBlock">
     <h2 class="text-center">Air Conditioning Repair, Gas Filling & Installation <br /> Services in Your Locality</h2>
@@ -142,27 +110,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- <div class="cardList mt-4">
-      <div class="cardListItem" *ngFor="let service of serviceData">
-        <div class="card border-0 pt-2">
-          <div class="d-flex justify-content-center">
-            <img src="../assets/images/services/{{service.image}}" class="card-img-top" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">{{ service.title }}</h5>
-            <p class="card-text my-4">{{ service.content }}</p>
-            <div class="d-block text-center">
-              <button class="btn btn-sm btn-primary rounded-pill px-3">Enquire now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    </div> 
   </div>
-
-
-
 
   <div class="row contactUs mb-5" id="contactUs">
     <h2 class="text-center">Contact Us</h2>
@@ -206,4 +155,9 @@
     <span class="d-block text-center text-secondary small mb-1">Copyright 2021 | All Rights Reserved by AC
       Solutions</span>
   </div>
-</div>
+</div> -->
+
+<router-outlet></router-outlet>
+
+<!-- <button (click)="goto('gallery')">Gallery</button>
+<button (click)="goto('contactUs')">Contactus</button> -->

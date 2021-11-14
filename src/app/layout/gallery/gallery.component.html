@@ -1,0 +1,30 @@
+<div class="mx-5">
+    <div class="d-block">
+        <ul class="nav justify-content-center bg-light py-2">
+            <li class="nav-item pointerCursor" (click)="currentGalleryType=galleryType; this.getFilterGallerData();"
+                *ngFor="let galleryType of galleryTypes">
+                <a class="nav-link" [ngClass]="{'active': currentGalleryType==galleryType }" aria-current="page">
+                    {{galleryType}}
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row galleryList mt-3 w-100">
+        <div class="filterGallery col-sm-12 col-md-6 col-lg-3"
+            *ngFor="let filterGallery of filterGalleryData;let index=index;" (mouseover)="galleryImageHoverIndex=index"
+            (mouseleave)="galleryImageHoverIndex=-1">
+            <div [ngStyle]="{'background-image': 'URL(' + filterGallery.src + ')'}"
+                class="text-center rounded img-fluid px-0 h-100">
+                <ng-container class="galleryContent">
+                    <div class="galleryContent">
+                        <i class="fa fa-search text-white rounded-circle p-2 border border-2" aria-hidden="true"></i>
+                    </div>
+                    <div class="galleryText text-dark d-block">manoj</div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- *ngIf="galleryImageHoverIndex==index" -->

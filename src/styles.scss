@@ -17,10 +17,27 @@
     border-radius: 50% !important;
 }
 
-.pointerCursor{
+.pointerCursor {
     cursor: pointer;
 }
 
-.fw-500{
+.fw-500 {
     font-weight: 500;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.blockTitle {
+    color: #051d3e;
+    font-size: 5.5vmin;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.headerUnderline {
+    height: 2px;
+    width: 45px;
+    background-color: #e26f00;
 }

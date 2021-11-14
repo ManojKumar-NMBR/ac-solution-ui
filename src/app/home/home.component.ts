@@ -1,13 +1,12 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
-import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'tre-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'tre-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit {
 
   carouselSlideData = [
     { id: 0, bgImgClass: 'carouselSlide-0', firstText: 'First', secondText: '', thirdText: '' },
@@ -34,22 +33,13 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   goToBlock(menu: any, event: any) {
     debugger
-    // this.router.navigate(['pages', menu.path]);
-
 
     if (menu.block && menu.block != '') {
-      // var block: HTMLElement = <HTMLElement>document.getElementById(menu.block);
-      setTimeout(() => {
-        document.querySelector(menu.block).scrollIntoView({ behavior: 'smooth' });
-      }, 250);
+      document.querySelector(menu.block).scrollIntoView({ behavior: 'smooth' });
     } else {
-      setTimeout(() => {
-        this.router.navigate(['/pages', menu.path]);
-      }, 1000);
+      this.router.navigate(['/pages', menu.path]);
     }
 
-    // event.stopImmediatePropagation();
-    // event.stopPropagation();
     /* if (blockName != 'homeBlock') {
       setTimeout(() => {
         document.documentElement.scrollTop = document.documentElement.scrollTop + 165;
@@ -67,9 +57,6 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.cdf.detectChanges();
   }
 
-  goto(url: string) {
-    this.router.navigate(['pages', url]);
-  }
 
 
   @ViewChild('scrollMe') myScrollContainer!: ElementRef;
