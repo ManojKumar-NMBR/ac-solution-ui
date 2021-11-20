@@ -97,9 +97,9 @@ export class AppComponent implements OnInit, AfterViewInit {
   ];
 
   contactData = [
-    { image: 'home.png', title: 'Our Office Address', content: 'Malad West, Mumbai, Maharashtra 400064' },
-    { image: 'email.png', title: 'General Enquiries', content: 'contact@mysites.com' },
-    { image: 'phone.png', title: 'Call Us', content: '+91-8888888888' },
+    { image: 'home.png', title: 'Our Office Address', content: 'Flat No. 80, Street No. -7,Bank Colony, Mandoli , Delhi -93' },
+    { image: 'email.png', title: 'General Enquiries', content: 'tyagi.kanchit@gmail.com' },
+    { image: 'phone.png', title: 'Call Us', content: '+91-9911442140' },
     { image: 'time.png', title: 'Our Office Address', content: 'Mon - Sun : 09:00 AM - 09:00 PM' },
   ]
 

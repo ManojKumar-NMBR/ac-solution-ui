@@ -84,11 +84,12 @@ export class HomeComponent implements OnInit {
   ];
 
   contactData = [
-    { image: 'home.png', title: 'Our Office Address', content: 'Malad West, Mumbai, Maharashtra 400064' },
-    { image: 'email.png', title: 'General Enquiries', content: 'contact@mysites.com' },
-    { image: 'phone.png', title: 'Call Us', content: '+91-8888888888' },
+    { image: 'home.png', title: 'Our Office Address', content: 'Flat No. 80, Street No. -7,Bank Colony, Mandoli , Delhi -93' },
+    { image: 'email.png', title: 'General Enquiries', content: 'tyagi.kanchit@gmail.com' },
+    { image: 'phone.png', title: 'Call Us', content: '+91-9911442140' },
     { image: 'time.png', title: 'Our Office Address', content: 'Mon - Sun : 09:00 AM - 09:00 PM' },
   ]
+
 
   aboutUsData = [
     { name: 'Mr. K. SRINIVAS REDDY', designation: 'Founder & Managing Director', image: 'buyProperty.png', about: 'He is the Managing Director of Shathabdhi Townships, Sri. K. Srinivasareddy is a successful real estate professional for more than a decade, his success has been due to his clear cut vision and long term planning is making the company Prosper the company year after year.' },
@@ -100,13 +101,36 @@ export class HomeComponent implements OnInit {
   weAreList = [
     { service: "Classic AirCon is a indipendent AC repair service provide." },
     { service: "We are expert technician , believe in client satisfaction." },
-    { service: "We are experienced more then 7 years in this field." },
+    { service: "We are experienced more then 17 years in this field." },
     { service: "Provide Service to our valuable customer in Delhi/NCR." },
     { service: "On day service promiss." },
     { service: "Providing warranty for 90 days." },
     { service: "We don't charge if fail to repair." },
     { service: "We always use original parts in case of replacement." }
   ]
+
+  
+
+  strategyList = [
+    { service: "Ensuring that our clients remain our business partners;" },
+    { service: "Implementation of mutually acceptable contracts." },
+    { service: "Exceed our client’s expectations while satisfying their specific needs." },
+    { service: "Delivery of high quality services." },
+    { service: "Turnkey projects (including all ancillaries such as Ventilation, G.I. ducting, MS piping, Copper piping, insulation, etc.)" },
+    { service: "Comfort Cooling conditions, like in Offices, Residences and Malls etc." },
+    { service: "Renovation and Modification of existing equipment to suit actual user requirement." },
+    { service: "Operation / AMC of / for major Air-conditioning Installations." },
+    { service: "We undertake above jobs / systems right from CONCEPT state to COMMISSIONING & TRIAL RUN and are equipped with the requisite resources, vital for optimum level of performance." },
+    { service: "We have already registered in Delhi and Uttar Pradesh (U.P.)" },
+    { service: "Our H.O. in Delhi & Branch Off. U.P." },
+    { service: "Electrical work (wring, lighting, ear thing, machine Installation, panel installation, three phase, single phase. " },
+    { service: "Firefighting, smoke deducting, CCTV camera, fire alarm, security system etc." },
+    { service: "Electrical welding , gas welding ,MS pipe & S S pipe." },
+    { service: "Paint Work (distemper, enamel, hygienic 3D effect, apex, emulsion, cement based, wallpaper canvas, & theme etc." },
+    { service: "Gypsum Four celling, Tile & Other Four Celling." },
+    { service: "Any enquiry from you will elicit our meticulous attention and we shall fulfill all your expectations of material and workmanship quality." }
+  ]
+
 
   acServicesData = [
     { name: 'Air Conditioning', image: 'air-conditioning.png' },
@@ -115,7 +139,17 @@ export class HomeComponent implements OnInit {
     { name: 'Service & Repairs', image: 'services-repairs.png' }
   ];
 
-  aboutAirCoolSolution = "As the temperatures increments and the climate gets harsher, you'd need to ensure you have a working AC framework in your home which is vitality productive.Regardless of whether you are introducing spic and span AC or experiencing outine upkeep, it's critical to employ the opportune individual for the activity. We are a multifaceted supplier that exceeds expectations as a solitary source answer for all your Ac prompt needs and administrations.Be it, AC Gas filling in Delhi, AC gas topping off in Noida, AC gas recording best costs, simply ring us.We are multipurpose specialist organizations of AC frameworks inside the territories referenced previously.";
+  aboutAirCoolSolution = "We wish to introduce ourselves as one of the prominent Outsourcing " +
+                          "Refrigeration and HVAC Contractors, Civil contractors, electrical "+
+                          "contractors ,Paint ,four celling Work. Ours is a team of qualified and "+
+                          "experienced Engineers & Technicians having the necessary expertise to design "+
+                          "and execute any system or project in Refrigeration & HVAC. We have executed "+
+                          "various such projects in India for the private sector as well as Government sector. "+
+                          "We have adequate manpower including skilled personnel and mechanics that "+
+                          "can meet all your requirements at the time of your order execution & also for "+
+                          "meeting your requirement of after sales services. We would like to mention that "+
+                          "we work best under stress conditions, when the project has to be executed on "+
+                          "war footing within your time schedule.";
 
   clientData = [
     { title: 'Hard Worker', content: 'The team is really very hard worker, they installed my ac as a place where every one has declined.', client: '- Rakesh Jaiswal' },
