@@ -111,7 +111,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   ];
 
   weAreList = [
-    { service: "AirCool Solutions is a indipendent AC repair service provide." },
+    { service: "Classic AirCon is a indipendent AC repair service provide." },
     { service: "We are expert technician , believe in client satisfaction." },
     { service: "We are experienced more then 7 years in this field." },
     { service: "Provide Service to our valuable customer in Delhi/NCR." },
