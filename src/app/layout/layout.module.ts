@@ -3,10 +3,13 @@ import { CommonModule } from '@angular/common';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { TeamComponent } from './team/team.component';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+
 @NgModule({
-  declarations: [ContactUsComponent, GalleryComponent],
+  declarations: [ContactUsComponent, GalleryComponent,TeamComponent],
   imports: [
     CommonModule,
     LayoutRoutingModule,

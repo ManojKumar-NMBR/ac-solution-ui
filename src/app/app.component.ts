@@ -29,6 +29,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       ]
     },
     { name: 'Gallery', path: 'gallery' },
+    { name: 'Team', path: 'team' },
     { name: 'Contact Us', path: 'contactUs', }
   ];
 

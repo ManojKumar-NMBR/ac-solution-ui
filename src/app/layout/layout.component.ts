@@ -21,10 +21,12 @@ export class LayoutComponent implements OnInit {
       ]
     },
     { name: 'Gallery', path: 'pages/gallery' },
+    { name: 'Team', path: 'pages/team' },
     { name: 'Contact Us', path: 'pages/contactUs' }
   ];
 
   goToBlock(pathName: string) {
+    debugger
     this.router.navigateByUrl(pathName);
 
     /* var block: HTMLElement = <HTMLElement>document.getElementById(blockName);
@@ -50,8 +52,12 @@ export class LayoutComponent implements OnInit {
   }
 
   setPagePathTitleValue() {
+    debugger
     if (this.router.url.includes('contactUs')) {
       this.pagePathTitle = 'Contact US';
+    }
+    if (this.router.url.includes('team')) {
+      this.pagePathTitle = 'Team';
     }
     else if (this.router.url.includes('gallery')) {
       this.pagePathTitle = 'Gallery';

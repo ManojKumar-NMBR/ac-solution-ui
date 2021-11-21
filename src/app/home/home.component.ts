@@ -28,12 +28,12 @@ export class HomeComponent implements OnInit {
       ]
     },
     { name: 'Gallery', path: 'gallery' },
+    { name: 'Team', path: 'team' },
     { name: 'Contact Us', path: 'contactUs', }
   ];
 
   goToBlock(menu: any, event: any) {
     debugger
-
     if (menu.block && menu.block != '') {
       document.querySelector(menu.block).scrollIntoView({ behavior: 'smooth' });
     } else {
