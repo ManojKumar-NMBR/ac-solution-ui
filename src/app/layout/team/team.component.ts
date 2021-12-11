@@ -54,10 +54,8 @@ export class TeamComponent implements OnInit {
 
   displayUserInfoSideBar(userId: number) {
     this.selectedUserInfo = null;
-    this.selectedUserInfo = this.userInfoData.filter(d => d.userId == userId); // Object.assign({}, this.userInfoData.find(d => d.id = userId));
-    setTimeout(() => {
-      this.displaySideBarFlag = true;
-    }, 1000);
+    this.selectedUserInfo = this.userInfoData.find(d => d.userId == userId); // Object.assign({}, this.userInfoData.find(d => d.id = userId));
+    this.displaySideBarFlag = true;
   }
 
 }
