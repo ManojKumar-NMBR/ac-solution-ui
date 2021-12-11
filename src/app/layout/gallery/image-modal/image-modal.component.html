@@ -1,0 +1,8 @@
+<carousel [isAnimated]="true" [interval]="100000" [noPause]="false" [showIndicators]="false"
+    [(activeSlide)]="activeImageIndex">
+    <slide *ngFor="let gallery of galleryData" class="d-block">
+        <div class="d-flex align-items-center justify-content-center text-white carouselSlide w-100"
+            [ngStyle]="{'background-image': 'url(' + gallery.src + ')'}" >
+        </div>
+    </slide>
+</carousel>

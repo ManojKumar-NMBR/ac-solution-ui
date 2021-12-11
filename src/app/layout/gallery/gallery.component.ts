@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ImageModalComponent } from './image-modal/image-modal.component';
 
 @Component({
   selector: 'tre-gallery',
@@ -24,7 +26,7 @@ export class GalleryComponent implements OnInit {
     { type: 'Air Conditioning', src: 'https://aircoolsolutions.in/img/gallery/gallery-9.jpg' },
   ]
 
-  constructor() { }
+  constructor(private modal: NgbModal,) { }
 
   ngOnInit(): void {
     this.getFilterGallerData();
@@ -36,6 +38,17 @@ export class GalleryComponent implements OnInit {
       this.filterGalleryData = this.galleryData;
     else
       this.filterGalleryData = this.galleryData.filter(d => d.type == this.currentGalleryType);
+  }
+
+
+  onDivClick(image: string) {
+    const activeModal = this.modal.open(ImageModalComponent, { centered: true });
+    const activeImageIndex = this.filterGalleryData.findIndex(d => d.src == image);
+
+    activeModal.componentInstance.galleryData = this.filterGalleryData;
+    setTimeout(() => {
+      activeModal.componentInstance.activeImageIndex = activeImageIndex;
+    }, 100);
   }
 
 }

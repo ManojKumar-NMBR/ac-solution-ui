@@ -11,10 +11,10 @@
     </div>
 
     <div class="row galleryList mt-3 w-100">
-        <div class="filterGallery col-sm-12 col-md-6 col-lg-3"
+        <div class="filterGallery col-sm-12 col-md-6 col-lg-3" 
             *ngFor="let filterGallery of filterGalleryData;let index=index;" (mouseover)="galleryImageHoverIndex=index"
             (mouseleave)="galleryImageHoverIndex=-1">
-            <div [ngStyle]="{'background-image': 'URL(' + filterGallery.src + ')'}"
+            <div (click)="onDivClick(filterGallery.src)" [ngStyle]="{'background-image': 'URL(' + filterGallery.src + ')'}"
                 class="text-center rounded img-fluid px-0 h-100">
                 <ng-container class="galleryContent" *ngIf="galleryImageHoverIndex==index">
                     <div class="galleryContent">
