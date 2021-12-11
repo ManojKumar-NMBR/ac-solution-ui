@@ -9,6 +9,10 @@ const routes: Routes = [
   { path: 'contactUs', component: ContactUsComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'team', component: TeamComponent },
+  {
+    path: 'services',
+    loadChildren: () => import('./services/services.module').then(m => m.ServicesModule)
+  },
   { path: '**', redirectTo: 'contactUs', pathMatch: 'full' },
 ];
 

@@ -21,10 +21,10 @@ export class HomeComponent implements OnInit {
     {
       name: 'Services', path: 'services',
       children: [
-        { name: 'AC-Gas', page: '' },
-        { name: 'AC-Installation', page: '' },
-        { name: 'AC-Rent', page: '' },
-        { name: 'Repair & Service', page: '' },
+        { name: 'AC-Gas', page: '/pages/services/ac-gas' },
+        { name: 'AC-Installation', page: '/pages/services/ac-isntallation' },
+        { name: 'AC-Rent', page: '/pages/services/ac-rent' },
+        { name: 'Repair & Service', page: '/pages/services/repair-rent' }
       ]
     },
     { name: 'Gallery', path: 'gallery' },
@@ -109,7 +109,7 @@ export class HomeComponent implements OnInit {
     { service: "We always use original parts in case of replacement." }
   ]
 
-  
+
 
   strategyList = [
     { service: "Ensuring that our clients remain our business partners;" },
@@ -140,16 +140,16 @@ export class HomeComponent implements OnInit {
   ];
 
   aboutAirCoolSolution = "We wish to introduce ourselves as one of the prominent Outsourcing " +
-                          "Refrigeration and HVAC Contractors, Civil contractors, electrical "+
-                          "contractors ,Paint ,four celling Work. Ours is a team of qualified and "+
-                          "experienced Engineers & Technicians having the necessary expertise to design "+
-                          "and execute any system or project in Refrigeration & HVAC. We have executed "+
-                          "various such projects in India for the private sector as well as Government sector. "+
-                          "We have adequate manpower including skilled personnel and mechanics that "+
-                          "can meet all your requirements at the time of your order execution & also for "+
-                          "meeting your requirement of after sales services. We would like to mention that "+
-                          "we work best under stress conditions, when the project has to be executed on "+
-                          "war footing within your time schedule.";
+    "Refrigeration and HVAC Contractors, Civil contractors, electrical " +
+    "contractors ,Paint ,four celling Work. Ours is a team of qualified and " +
+    "experienced Engineers & Technicians having the necessary expertise to design " +
+    "and execute any system or project in Refrigeration & HVAC. We have executed " +
+    "various such projects in India for the private sector as well as Government sector. " +
+    "We have adequate manpower including skilled personnel and mechanics that " +
+    "can meet all your requirements at the time of your order execution & also for " +
+    "meeting your requirement of after sales services. We would like to mention that " +
+    "we work best under stress conditions, when the project has to be executed on " +
+    "war footing within your time schedule.";
 
   clientData = [
     { title: 'Hard Worker', content: 'The team is really very hard worker, they installed my ac as a place where every one has declined.', client: '- Rakesh Jaiswal' },

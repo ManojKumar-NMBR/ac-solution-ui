@@ -8,8 +8,6 @@ import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageModalComponent } from './gallery/image-modal/image-modal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
-
-
 @NgModule({
   declarations: [ContactUsComponent, GalleryComponent, TeamComponent, ImageModalComponent],
   imports: [

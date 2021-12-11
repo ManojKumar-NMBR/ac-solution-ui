@@ -14,10 +14,10 @@ export class LayoutComponent implements OnInit {
     {
       name: 'Services', path: 'services',
       children: [
-        { name: 'AC-Gas', path: '' },
-        { name: 'AC-Installation', path: '' },
-        { name: 'AC-Rent', path: '' },
-        { name: 'Repair & Service', path: '' },
+        { name: 'AC-Gas', page: '/pages/services/ac-gas' },
+        { name: 'AC-Installation', page: 'pages/services/ac-isntallation' },
+        { name: 'AC-Rent', page: '/pages/services/ac-rent' },
+        { name: 'Repair & Service', page: '/pages/services/repair-rent' }
       ]
     },
     { name: 'Gallery', path: 'pages/gallery' },
@@ -27,6 +27,9 @@ export class LayoutComponent implements OnInit {
 
   goToBlock(pathName: string) {
     debugger
+    if (['services'].includes(pathName.toLowerCase()))
+      return;
+
     this.router.navigateByUrl(pathName);
 
     /* var block: HTMLElement = <HTMLElement>document.getElementById(blockName);
@@ -38,21 +41,27 @@ export class LayoutComponent implements OnInit {
     } */
   }
 
+  nothing() {
+    return null;
+  }
+
   constructor(private router: Router) { }
 
   pagePathTitle = '';
   ngOnInit(): void {
-    this.setPagePathTitleValue();
+    // this.setPagePathTitleValue();
 
     this.router.events.subscribe((val: Event) => {
       // highlight side menu
-      if (val instanceof NavigationEnd)
+      if (val instanceof NavigationEnd) {
         this.setPagePathTitleValue();
+        console.log(this.router.url);
+      }
     });
   }
 
   setPagePathTitleValue() {
-    debugger
+    console.log(this.router.url);
     if (this.router.url.includes('contactUs')) {
       this.pagePathTitle = 'Contact US';
     }
@@ -61,6 +70,10 @@ export class LayoutComponent implements OnInit {
     }
     else if (this.router.url.includes('gallery')) {
       this.pagePathTitle = 'Gallery';
+    } else if (this.router.url.includes('services')) {
+      const splitURL = this.router.url.split('/');
+
+      this.pagePathTitle = 'Services > ' + splitURL[splitURL.length - 1];
     }
 
 
