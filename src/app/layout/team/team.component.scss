@@ -1,48 +1,48 @@
 * {
     box-sizing: border-box;
 }
-body{
-	font-family: 'Montserrat', sans-serif;
+body {
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #555652;
     margin: 0;
     overflow-x: hidden;
-    background: #EBEDEF;
-    background-image: url(../../../assets/images/team/background.png)
+    background: #ebedef;
+    background-image: url(../../../assets/images/team/background.png);
 }
 
 /* Utility classes */
-.container-full-width{
+.container-full-width {
     width: 100%;
     margin: auto;
     display: block;
     padding: 40px 15px;
 }
-.container{
-	max-width: 1000px;
-	display: block;
-	margin-left: auto;
+.container {
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
 }
-.container::after{
+.container::after {
     content: "";
     display: table;
     clear: both;
 }
-.title{
-    font-family: 'Faster One', cursive;
+.title {
+    font-family: "Faster One", cursive;
     font-size: 50px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    background: -webkit-linear-gradient(#F15251, #16A05D);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
+    background: -webkit-linear-gradient(#f15251, #16a05d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
 }
-.subtitle{
-    font-family: 'Montserrat', sans-serif;
+.subtitle {
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     margin-top: 0;
     text-align: center;
@@ -50,121 +50,121 @@ body{
     font-weight: 400;
     text-shadow: 2px 2px 3px #000;
 }
-.subtitle span{
-    color: #17A05D;
+.subtitle span {
+    color: #17a05d;
     font-weight: 900;
     letter-spacing: 2px;
     text-shadow: 0 0 0 #000;
 }
-.name{
-    font-family: 'Montserrat', sans-serif;
+.name {
+    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     cursor: pointer;
     text-align: center;
     font-size: 16px;
 }
-.one-third{
-	width: 100%;
-	float: left;
-}
-@media (min-width: 768px) {
-    .one-third{
-        width: 33%;
-    }
-}
-.one-half{
+.one-third {
     width: 100%;
     float: left;
 }
 @media (min-width: 768px) {
-    .one-half{
+    .one-third {
+        width: 33%;
+    }
+}
+.one-half {
+    width: 100%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .one-half {
         width: 50%;
     }
 }
-img{
-	max-width: 100%;
-	margin: auto;
-	display: block;
+img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
 }
-.profile-photo{
+.profile-photo {
     cursor: pointer;
     border: 6px solid transparent;
-    border-image: linear-gradient(to right, red , yellow);
+    border-image: linear-gradient(to right, red, yellow);
     border-image-slice: 1;
     width: 200px;
     height: 200px;
     object-fit: cover;
 }
-.ui-close-holder{
+.ui-close-holder {
     text-align: center;
 }
-.ui-close{
-	font-weight: 400;
-	font-size: 2rem;
+.ui-close {
+    font-weight: 400;
+    font-size: 2rem;
     color: transparent;
-	background-color: rgba(0, 0, 0, .2);
-    background-image: url(../../../assets/images/team/times-solid.svg);    
-	padding: 3px 10px;
-	cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url(../../../assets/images/team/times-solid.svg);
+    padding: 3px 10px;
+    cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
 }
-.bg-grey{
+.bg-grey {
     background: #222222;
 }
-.bg-dark{
-    background: #0D004C;
+.bg-dark {
+    background: #0d004c;
 }
-.margin-t-narrow{
+.margin-t-narrow {
     margin-top: 30px;
 }
-.margin-b-narrow{
+.margin-b-narrow {
     margin-bottom: 20px;
 }
-.orange{
-    color: #FF9800;
+.orange {
+    color: #ff9800;
     font-style: italic;
 }
-.underline{
+.underline {
     text-decoration: underline;
 }
-.red{
-    color: #DD5044;
+.red {
+    color: #dd5044;
 }
-.green{
-    color: #1DA261;
+.green {
+    color: #1da261;
 }
-.topic__headline{
-    color: #FFF;
+.topic__headline {
+    color: #fff;
     font-weight: 400;
     text-transform: capitalize;
     font-size: 18px;
     margin-bottom: 0;
 }
-.topic__description{
-    color: #7C7C7C;
+.topic__description {
+    color: #7c7c7c;
     font-weight: 400;
     font-size: 17px;
     text-shadow: 2px 2px 2px #000;
     line-height: 1.7em;
 }
-.text-right{
+.text-right {
     text-align: right;
 }
-a{
-    color: #FF9800;
+a {
+    color: #ff9800;
 }
-.center{
+.center {
     text-align: center;
 }
-.italic{
+.italic {
     font-style: italic;
 }
 /*============================= GENERAL STYLE ABOVE =========================*/
 
-.popup-outer{
-	display: none;
-	position: fixed;
+.popup-outer {
+    display: none;
+    position: fixed;
     left: 0%;
     top: 0%;
     right: 0%;
@@ -179,9 +179,9 @@ a{
     border-width: 30px;
     border-color: hsla(0, 0%, 100%, 0.97);
     background-color: hsla(0, 0%, 91%, 0.96);
-	}
-.popup-inner{
-	position: relative;
+}
+.popup-inner {
+    position: relative;
     display: block;
     max-width: 800px;
     margin-right: auto;
@@ -191,12 +191,19 @@ a{
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-	}
-.popup-inner p{
-    font-family: 'Montserrat', sans-serif;
+}
+.popup-inner p {
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.4;
 }
 
 /*============================================== THE END ==============================*/
+
+.primeSideBar {
+    img {
+        height: 25vmin;
+        width: 25vmin;
+    }
+}

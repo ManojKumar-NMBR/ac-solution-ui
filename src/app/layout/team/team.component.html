@@ -4,22 +4,34 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Faster+One&display=swap">
 </head>
 
-<body>
+<body class="mt-4">
 	<p-sidebar [(visible)]="displaySideBarFlag" position="right" [baseZIndex]="10000" [closeOnEscape]="true"
 		[modal]="true" [blockScroll]="true" [dismissible]="true" [showCloseIcon]="true">
 		<div class="primeSideBar">
-			<h1 style="font-weight:normal">Right Sidebar</h1>
-			<button (click)="displaySideBarFlag = false">Save</button>
-			<button (click)="displaySideBarFlag = false">Close</button>
+			<div class="row" *ngIf="selectedUserInfo">
+				<img class="rounded-circle" src="../../../assets/images/team/{{selectedUserInfo.img}}">
+				<p class="name">{{ selectedUserInfo.name }}</p>
+			</div>
 		</div>
 	</p-sidebar>
 
 	<div class="container-full-width margin-b-narrow">
 		<h1 class="title">Meet the team</h1>
-		<!-- <p class="subtitle">Click any profile <span>photo</span> or <span>name</span> of the team members.</p> -->
 	</div>
 
 	<div class="container">
+		<div class="one-third mb-5" (click)="displayUserInfoSideBar(userInfo.userId)"
+			*ngFor="let userInfo of userInfoData">
+			<img class="profile-photo" src="../../../assets/images/team/{{userInfo.img}}">
+			<p class="name">{{ userInfo.name }}</p>
+		</div>
+	</div>
+
+
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<!-- <div class="container">
 		<div class="one-third" (click)="displaySideBar()">
 			<img class="profile-photo" src="../../../assets/images/team/Charles-Shimer-min.jpg">
 			<p class="name">Charles Shimer</p>
@@ -107,10 +119,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- 2nd row -->
-	<div class="container">
+	<!-- <div class="container">
 
 		<div class="one-third">
 			<img class="profile-photo" src="../../../assets/images/team/kanchit.png">
@@ -196,7 +208,7 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- 2nd row -->
+	</div>  -->
 
 
 
