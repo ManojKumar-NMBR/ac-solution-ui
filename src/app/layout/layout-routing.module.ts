@@ -3,10 +3,12 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'contactUs', pathMatch: 'full' },
   { path: 'contactUs', component: ContactUsComponent },
+  { path: 'test', component: TestComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'team', component: TeamComponent },
   {

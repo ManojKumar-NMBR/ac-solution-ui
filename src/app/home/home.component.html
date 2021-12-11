@@ -48,39 +48,38 @@
             <p class="text-justify"> {{aboutAirCoolSolution}} </p>
         </div>
         <div class="row">
-            <div class="col-6">
-                <div class="mx-4">
-                    <h4>We Are...</h4>
-                    <div class="whoweareList mt-2 pl-2 mx-2">
-                        <ul *ngFor="let list of weAreList">
-                            -{{list.service}}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
+            <div class="col-12 d-flex">
                 <div class="col-6">
                     <div class="mx-4">
-                        <h4>Strategy - In support of our mission, Classic Air Con is committed to:-</h4>
+                        <h4>We Are...</h4>
                         <div class="whoweareList mt-2 pl-2 mx-2">
-                            <ul *ngFor="let list of strategyList">
-                                -{{list.service}}
+                            <ul *ngFor="let list of weAreList">
+                                - {{list.service}}
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 d-flex justify-content-center mt-5">
+                <div class="col-6 d-flex justify-content-center align-items-center">
                     <div class="contractDiscount p-4">
                         <div class="dataBlock p-2">
                             <h4><span>299 Rs</span> for AC Service</h4>
-                            <h5>We provide specialists in the<br> following areas</h5>
-                            <p>Residential and Commercial.</p>
-                            <button type="button" class="btn btn-sm btn-primary w-50 mx-auto">Just Call US</button>
-                            <p class="text-secondary mt-2">Time- 8am to 10pm</p>
-                            <h6></h6>
+                            <h5 class="mb-0">We provide specialists in the<br> following areas</h5>
+                            <p class="mb-0">Residential and Commercial.</p>
+                            <button type="button" class="btn btn-sm justCallButton btn-primary w-50 mx-auto">Just Call US</button>
+                            <p class="text-secondary mt-2 mb-0">Time- 8am to 10pm</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="mx-4">
+                    <h4>Strategy - In support of our mission, Classic Air Con is committed to:-</h4>
+                    <div class="whoweareList mt-2 pl-2 mx-2">
+                        <ul *ngFor="let list of strategyList">
+                            - {{list.service}}
+                        </ul>
                     </div>
                 </div>
             </div>

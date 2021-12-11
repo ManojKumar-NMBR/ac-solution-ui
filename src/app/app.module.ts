@@ -6,6 +6,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     AppRoutingModule,
     CarouselModule

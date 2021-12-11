@@ -33,18 +33,33 @@ export class HomeComponent implements OnInit {
   ];
 
   goToBlock(menu: any, event: any) {
-    debugger
+    /* debugger
     if (menu.block && menu.block != '') {
       document.querySelector(menu.block).scrollIntoView({ behavior: 'smooth' });
     } else {
       this.router.navigate(['/pages', menu.path]);
-    }
+    } */
 
     /* if (blockName != 'homeBlock') {
       setTimeout(() => {
         document.documentElement.scrollTop = document.documentElement.scrollTop + 165;
       }, 1000);
     } */
+
+    debugger 
+    var yourHeight = 100;
+
+    // scroll to your element
+    document.querySelector(menu.block).scrollIntoView({ behavior: 'smooth' });
+
+    setTimeout(() => {
+      // now account for fixed header
+      var scrolledY = window.scrollY;
+
+      if (scrolledY) {
+        window.scroll(0, scrolledY - yourHeight);
+      }
+    }, 500);
   }
 
   constructor(private cdf: ChangeDetectorRef, private router: Router) { }
@@ -57,14 +72,11 @@ export class HomeComponent implements OnInit {
     this.cdf.detectChanges();
   }
 
-
-
   @ViewChild('scrollMe') myScrollContainer!: ElementRef;
   getNavBarClass() {
     // console.log(this.myScrollContainer);
     let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
     let max = document.documentElement.scrollHeight;
-
 
     if (document.documentElement.scrollTop && document.documentElement.scrollTop > 5)
       return 'navBarTransparent';
@@ -90,7 +102,6 @@ export class HomeComponent implements OnInit {
     { image: 'time.png', title: 'Our Office Address', content: 'Mon - Sun : 09:00 AM - 09:00 PM' },
   ]
 
-
   aboutUsData = [
     { name: 'Mr. K. SRINIVAS REDDY', designation: 'Founder & Managing Director', image: 'buyProperty.png', about: 'He is the Managing Director of Shathabdhi Townships, Sri. K. Srinivasareddy is a successful real estate professional for more than a decade, his success has been due to his clear cut vision and long term planning is making the company Prosper the company year after year.' },
     { name: 'K. LAXMI', designation: 'Director', image: 'rentProperty.png', about: 'She is one of the Directors of Shathabdhi Townships. Contributing her valuable suggestions and advice time and again to the Director, She has been an active board member diligently working towards the growth and progress of Shathabdhi Townships.' },
@@ -108,8 +119,6 @@ export class HomeComponent implements OnInit {
     { service: "We don't charge if fail to repair." },
     { service: "We always use original parts in case of replacement." }
   ]
-
-
 
   strategyList = [
     { service: "Ensuring that our clients remain our business partners;" },
@@ -131,7 +140,6 @@ export class HomeComponent implements OnInit {
     { service: "Any enquiry from you will elicit our meticulous attention and we shall fulfill all your expectations of material and workmanship quality." }
   ]
 
-
   acServicesData = [
     { name: 'Air Conditioning', image: 'air-conditioning.png' },
     { name: 'Gas Filling', image: 'gas-filling.png' },
@@ -139,17 +147,7 @@ export class HomeComponent implements OnInit {
     { name: 'Service & Repairs', image: 'services-repairs.png' }
   ];
 
-  aboutAirCoolSolution = "We wish to introduce ourselves as one of the prominent Outsourcing " +
-    "Refrigeration and HVAC Contractors, Civil contractors, electrical " +
-    "contractors ,Paint ,four celling Work. Ours is a team of qualified and " +
-    "experienced Engineers & Technicians having the necessary expertise to design " +
-    "and execute any system or project in Refrigeration & HVAC. We have executed " +
-    "various such projects in India for the private sector as well as Government sector. " +
-    "We have adequate manpower including skilled personnel and mechanics that " +
-    "can meet all your requirements at the time of your order execution & also for " +
-    "meeting your requirement of after sales services. We would like to mention that " +
-    "we work best under stress conditions, when the project has to be executed on " +
-    "war footing within your time schedule.";
+  aboutAirCoolSolution = "We wish to introduce ourselves as one of the prominent Outsourcing  Refrigeration and HVAC Contractors, Civil contractors, electrical contractors ,Paint ,four celling Work. Ours is a team of qualified and experienced Engineers & Technicians having the necessary expertise to design and execute any system or project in Refrigeration & HVAC. We have executed various such projects in India for the private sector as well as Government sector. We have adequate manpower including skilled personnel and mechanics that can meet all your requirements at the time of your order execution & also for meeting your requirement of after sales services. We would like to mention that we work best under stress conditions, when the project has to be executed on war footing within your time schedule."
 
   clientData = [
     { title: 'Hard Worker', content: 'The team is really very hard worker, they installed my ac as a place where every one has declined.', client: '- Rakesh Jaiswal' },

@@ -1,0 +1,17 @@
+<button class="btn btn-sm btn-primary" (click)="openDisplay()">test works!</button>
+
+<p-sidebar [(visible)]="visibleSidebar2" position="right" [baseZIndex]="10000" [closeOnEscape]="true" [modal]="true"
+    [blockScroll]="true" [dismissible]="true" [showCloseIcon]="true">
+    <div class="primeSideBar">
+        <h1 style="font-weight:normal">Right Sidebar</h1>
+        <button (click)="visibleSidebar2 = false" (click)="test()">Save</button>
+        <button (click)="visibleSidebar2 = false">Close</button>
+    </div>
+</p-sidebar>
+
+<!-- <p-sidebar [(visible)]="display" [baseZIndex]="10000" position="right" appendTo="body" [dismissible]="true"
+    [showCloseIcon]="false" [closeOnEscape]="true" [modal]="true" [blockScroll]="false">
+    <div class="primeSideBar">
+        Content 
+    </div>
+</p-sidebar> -->

@@ -7,15 +7,18 @@ import { TeamComponent } from './team/team.component';
 import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageModalComponent } from './gallery/image-modal/image-modal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { SidebarModule } from 'primeng/sidebar';
+import { TestComponent } from './test/test.component'; 
 
 @NgModule({
-  declarations: [ContactUsComponent, GalleryComponent, TeamComponent, ImageModalComponent],
+  declarations: [ContactUsComponent, GalleryComponent, TeamComponent, ImageModalComponent, TestComponent],
   imports: [
     CommonModule,
     LayoutRoutingModule,
     NgbNavModule,
     NgbModule,
-    CarouselModule
+    CarouselModule,
+    SidebarModule 
   ]
 })
 export class LayoutModule { }

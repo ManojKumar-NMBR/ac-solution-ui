@@ -49,7 +49,7 @@ export class LayoutComponent implements OnInit {
 
   pagePathTitle = '';
   ngOnInit(): void {
-    // this.setPagePathTitleValue();
+    this.setPagePathTitleValue();
 
     this.router.events.subscribe((val: Event) => {
       // highlight side menu
