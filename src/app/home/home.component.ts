@@ -46,20 +46,26 @@ export class HomeComponent implements OnInit {
       }, 1000);
     } */
 
-    debugger 
-    var yourHeight = 100;
+    debugger
 
-    // scroll to your element
-    document.querySelector(menu.block).scrollIntoView({ behavior: 'smooth' });
+    if (menu.block && menu.block != '') {
+      var headerHeight = 100;
 
-    setTimeout(() => {
-      // now account for fixed header
-      var scrolledY = window.scrollY;
+      // scroll to your element
+      document.querySelector(menu.block).scrollIntoView({ behavior: 'smooth' });
 
-      if (scrolledY) {
-        window.scroll(0, scrolledY - yourHeight);
-      }
-    }, 500);
+      setTimeout(() => {
+        // now account for fixed header
+        var scrolledY = window.scrollY;
+
+        if (scrolledY) {
+          window.scroll(0, scrolledY - headerHeight);
+        }
+      }, 500);
+    } else {
+      this.router.navigate(['/pages', menu.path]);
+    }
+
   }
 
   constructor(private cdf: ChangeDetectorRef, private router: Router) { }
