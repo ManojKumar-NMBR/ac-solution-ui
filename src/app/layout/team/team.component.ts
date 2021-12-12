@@ -14,32 +14,62 @@ export class TeamComponent implements OnInit {
     {
       userId: 1,
       name: 'Charles Shimer',
-      img: 'Charles-Shimer-min.jpg'
+      img: 'Charles-Shimer-min.jpg',
+      about: [
+        "<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt ulpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu  fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+      ]
     },
     {
       userId: 2,
       name: 'Francis Wilson',
-      img: 'Francis-Wilson-min.jpg'
+      img: 'Francis-Wilson-min.jpg',
+      about: [
+        "<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt ulpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu  fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+      ]
     },
     {
       userId: 3,
       name: 'Gary Baxter',
-      img: 'Gary-Baxter-min.jpg'
+      img: 'Gary-Baxter-min.jpg',
+      about: [
+        "<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt ulpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu  fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+      ]
     },
     {
       userId: 4,
       name: 'Kanchit Tyagi',
-      img: 'kanchit.png'
+      img: 'kanchit.png',
+      about: [
+        "<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt ulpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu  fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+      ]
     },
     {
       userId: 5,
       name: 'Paul Hendrickson',
-      img: 'Steven-Mays-min.jpg'
+      img: 'Steven-Mays-min.jpg',
+      about: [
+        "<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt ulpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu  fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+      ]
     },
     {
       userId: 6,
       name: 'Steven Mays',
-      img: 'Paul-Hendrickson-min.jpg'
+      img: 'Paul-Hendrickson-min.jpg',
+      about: [
+        "<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt ulpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu  fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "<p class='orange'>Excepteur sint occaecat <span class='underline'>cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. reprehenderit in <span class='underline'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+      ]
     }
   ]
 

@@ -43,5 +43,37 @@
 }
 
 .p-sidebar-right {
-    width: 30rem !important;
+    width: 26rem !important;
+}
+
+.p-sidebar {
+    overflow: scroll;
+}
+
+.orange {
+    color: #ff9800 !important;
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+.red {
+    color: #dd5044;
+}
+.green {
+    color: #1da261;
+}
+.topic__headline {
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.topic__description {
+    color: #7c7c7c;
+    font-weight: 400;
+    font-size: 17px;
+    text-shadow: 2px 2px 2px #000;
+    line-height: 1.7em;
 }

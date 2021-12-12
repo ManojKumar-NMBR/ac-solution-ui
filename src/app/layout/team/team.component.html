@@ -9,8 +9,13 @@
 		[modal]="true" [blockScroll]="true" [dismissible]="true" [showCloseIcon]="true">
 		<div class="primeSideBar">
 			<div class="row" *ngIf="selectedUserInfo">
-				<img class="rounded-circle" src="../../../assets/images/team/{{selectedUserInfo.img}}">
+				<img class="rounded w-75" src="../../../assets/images/team/{{selectedUserInfo.img}}">
 				<p class="name">{{ selectedUserInfo.name }}</p>
+
+				<ng-container *ngFor="let selectedUser of selectedUserInfo.about">
+					<div class="userContent" [innerHTML]="selectedUser">
+					</div>
+				</ng-container>
 			</div>
 		</div>
 	</p-sidebar>
