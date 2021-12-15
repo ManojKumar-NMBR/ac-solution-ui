@@ -11,7 +11,7 @@
 }
 .text {
     background: #176bc4;
-    padding-bottom: 42px;
+    // padding-bottom: 42px;
     position: relative;
     padding-top: 10px;
     text-align: center;
@@ -35,4 +35,29 @@
     align-content: center;
     display: contents;
     font-weight: bold;
+}
+
+.headers {
+    font-size: 26px;
+    color: #051d3e;
+}
+
+.menuList {
+    border-left: 3px solid #d63343;
+    .list-group-item {
+        border: none;
+        background: #f1f1f1;
+        color: #242424;
+        display: block;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        padding: 1rem 0 1rem 1rem;
+        &:hover {
+            background: #d63343;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
