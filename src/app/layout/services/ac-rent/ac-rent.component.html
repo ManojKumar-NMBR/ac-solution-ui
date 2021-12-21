@@ -1,14 +1,13 @@
 <div class="container">
     <div class="row mt-3">
         <div class="col-3">
-            <div class="list-group">
+            <div class="list-group menuList">
                 <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
                 <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
                 <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
                 <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
                 <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
             </div>
         </div>
         <div class="col-9">
@@ -18,15 +17,15 @@
     <div class="row mt-4">
         <div class="col-3 text px-0 pt-0">
             <img class="w-100" src="https://aircoolsolutions.in/img/service/service-widget-img.png" alt="">
-            <div class="text1">
-                <p><span>Available</span> for any type of HVAC Service</p>
+            <div class="text1 p-3">
+                <p> Available for any type of HVAC Service</p>
                 <h4>We can help</h4>
                 <a class="main_btn" href="tel:9870227516">Contact us</a>
             </div>
         </div>
         <div class="col-9">
-            <h4 style="margin-left: 35px;">Air Conditioning GAS Filling</h4>
-            <p style="margin: 35px;">
+            <h4 class="headers mx-4">Air Conditioning GAS Filling</h4>
+            <p class="mx-4">
                 On the off chance that your AC isn't cooling your room, there might be a particular reason that doesn't
                 let your AC to cool your room at its best. The low gas level is the noticeable motivation behind why
                 your cool framework neglects to cool your room. With time, the gas level gets lower and it is
@@ -45,7 +44,7 @@
                     <img src="https://aircoolsolutions.in/img/service/maintence-7.jpg" alt="">
                 </div>
                 <div class="col-6">
-                    <h4>Checking & Maintenance</h4>
+                    <h4 class="headers">Checking & Maintenance</h4>
                     <p>
                         Efficiently unleash cross-media information without cross-media value. Quickly maximize timely
                         deliverables for real-time schemas. Dramatically maintain clicks-and mortar functional
@@ -57,11 +56,20 @@
                         - Genuien Charge/ affordabel price.<br>
                     </p>
                 </div>
-
             </div>
         </div>
 
     </div>
 
-
+    <div class="row">
+        <div class="col-12 d-flex my-4">
+            <div class="offset-3"></div>
+            <div class="col-3 py-4 text-white" *ngFor="let certificate of certificates"
+                [ngStyle]="{'background': certificate.bgColor }">
+                <img [src]="certificate.img" class="d-block text-center mx-auto">
+                <h4 class="text-center my-3">{{certificate.title}}</h4>
+                <p class="text-center">{{certificate.content}}</p>
+            </div>
+        </div>
+    </div>
 </div>
